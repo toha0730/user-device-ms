@@ -1,0 +1,21 @@
+{% include 'top.html' %}
+
+    <div class="content">
+         <div class="container">
+        <h1 class="title">Searching Employee</h1>
+
+        <form action="{{url_for('search')}}" method="GET">
+         Employee ID
+            :<br>
+            <br>
+            <input type="text" name="empid"><br>
+                <br>
+                <br>
+                <button class="flat" type="submit">Search</button>
+
+            </form>
+
+             </div>
+    </div>
+
+{% include 'bottom.html'%}

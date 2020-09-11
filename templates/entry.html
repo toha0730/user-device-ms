@@ -1,0 +1,33 @@
+{% include 'top.html' %}
+
+<div class="content">
+    <div class="container">
+        <h1 class="title">Entry New Employee Data</h1>
+
+        <form class="newbooking pure-form pure-form-aligned" method="POST" action="{{url_for('data_entry')}}">
+            <div class="pure-control-group">
+                <label for="empid"> Employee ID: </label>
+                <input type="number" name="empid" placeholder="Register Employee ID" min="1" max="9999999" required>
+            </div>
+            <div class="pure-control-group">
+                <label for="name">Name</label>
+                <input type="text" name="name" placeholder="First & Last Name" required>
+            </div>
+            <div class="pure-control-group">
+                <label for="homeaddress">Home Address</label>
+                <input type="text" name="homeaddress" placeholder="Home Address" required>
+            </div>
+            <div class="pure-control-group">
+                <label for="dateofbirth">Date Of Birth</label>
+                <input type="date" name="dateofbirth">
+            </div>
+            <div class="pure-control-group">
+                <label for="password">Password</label>
+                <input type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <button type="submit" class="flat">Add Employee</button>
+        </form>
+    </div>
+</div>
+
+{% include 'bottom.html' %}
